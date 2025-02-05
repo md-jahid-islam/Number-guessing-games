@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game (2-Player)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🎯 2-Player Number Guessing Game</h1>
+        
+        <div class="step" id="step1">
+            <p><strong>Player 1</strong>, enter a number (1-10):</p>
+            <input type="number" id="player1Number" min="1" max="10" placeholder="Enter a number...">
+            <button id="submitNumber">Confirm Number</button>
+        </div>
+
+        <div class="step hide" id="step2">
+            <p><strong>Player 2</strong>, guess the number:</p>
+            <input type="number" id="guessInput" min="1" max="10" placeholder="Enter your guess...">
+            <button id="submitGuess">Guess</button>
+
+            <div class="life-bar">
+                <div class="life" id="life"></div>
+            </div>
+
+            <p class="message" id="message"></p>
+        </div>
+
+        <button id="restart" class="hide">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
